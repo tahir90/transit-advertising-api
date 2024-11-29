@@ -1,12 +1,30 @@
+# FastAPI and Server
 fastapi[all]
-uvicorn
-sqlalchemy
+uvicorn[standard]
+gunicorn
+
+# Database
+sqlalchemy>=1.4.41
 psycopg2-binary
-redis
-geoalchemy2
-python-dotenv
 alembic
-pytest
-httpx
+geoalchemy2
+shapely
+
+# Caching and Queue
+redis
+
+# Authentication and Security
 python-jose[cryptography]
 passlib[bcrypt]
+
+# Environment and Config
+python-dotenv
+
+# Testing
+pytest
+httpx
+
+# Utilities
+pydantic
+python-multipart
+email-validator
